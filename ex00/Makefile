@@ -1,11 +1,11 @@
-NAME = brainz
+NAME = BraiiiiiiinnnzzzZ
 
 CC = c++
-CFLAGS = -Wall -Wextra -Werror -std=c++98
+CFLAGS = -Wall -Wextra -Werror -pedantic -std=c++98
 
 RM = rm -f
 
-SRC = main.cpp Zombie.cpp newZombile.cpp randomChump.cpp
+SRC = main.cpp Zombie.cpp newZombie.cpp randomChump.cpp
 
 OBJ = $(SRC:.cpp=.o)
 
