@@ -6,7 +6,7 @@
 /*   By: moboulan <moboulan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 18:19:29 by moboulan          #+#    #+#             */
-/*   Updated: 2025/04/26 16:21:45 by moboulan         ###   ########.fr       */
+/*   Updated: 2025/04/26 16:57:47 by moboulan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,4 +57,6 @@ void Harl::complain(std::string level)
             return;
         }
     }
+
+    std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;
 }
