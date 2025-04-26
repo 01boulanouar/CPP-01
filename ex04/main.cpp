@@ -6,7 +6,7 @@
 /*   By: moboulan <moboulan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 19:43:58 by moboulan          #+#    #+#             */
-/*   Updated: 2025/04/26 13:40:31 by moboulan         ###   ########.fr       */
+/*   Updated: 2025/04/26 13:50:39 by moboulan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ std::string replace(std::string line, std::string s1, std::string s2)
 {
     size_t position = 0;
     
-    if (line.empty())
+    if (s1.empty())
         return (line);
 
     position = line.find(s1);
@@ -58,7 +58,7 @@ int sed(std::string filename, std::string s1, std::string s2)
 int main(int argc, char *argv[])
 {
     if (argc != 4)
-        return (std::cerr << "./SedIsForLosers filename s1 s2" << std::endl, 1);
+        return (std::cerr << argv[0] <<  " filename s1 s2" << std::endl, 1);
     else
         return (sed(argv[1], argv[2], argv[3]));
 }
